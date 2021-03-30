@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Title of the document</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+  </head>
+  <body>
+    
+    <h1>Filter browser test</h1>
+	
+
+	<p id="outcome"></p>
+
+<script>
+var userAgent = window.navigator.userAgent.toLowerCase(),
+    safari = /safari/.test( userAgent ),
+    ios = /iphone|ipod|ipad/.test( userAgent );
+	
+var isIos = false;
+
+if( ios ) {
+	isIos = true;
+    if ( safari ) {
+        //browser
+    } else if ( !safari ) {
+        //webview
+    };
+} else {
+    //not iOS
+	isIos = true;
+};
+document.getElementById("outcome").innerHTML = "The browser detail: Is ios ".isIos;
+</script>
+    
+    
+  </body>
+</html>
