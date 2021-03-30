@@ -1,24 +1,24 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
   <head>
     <title>Title of the document</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    
   </head>
   <body>
-    
     <h1>Filter browser test</h1>
-	
-  <h3>Browser detail</h3>
-	<p id="pIos"></p>
-  <p id="pMobile"></p>
 
-<script>
-document.getElementById("pIos").innerHTML = tc_vars.length
-//document.getElementById("pIos").innerHTML = "Ios = "+ isIos;
-document.getElementById("pMobile").innerHTML = "Mobile = " + isMobile;
-</script>
-    
+    <h3>Browser detail</h3>
+    <p id="pIos"></p>
+    <p id="pMobile"></p>
+
+    <script>
+      window.onload = function () {
+        document.getElementById("pIos").innerHTML = tc_vars.length;
+        //document.getElementById("pIos").innerHTML = "Ios = "+ isIos;
+        document.getElementById("pMobile").innerHTML = "Mobile = " + isMobile;
+      };
+    </script>
+
     <script id="tc_SRGGD_42" src="tc_SRGGD_42.js"></script>
   </body>
 </html>
