@@ -8,14 +8,17 @@
     <h1>Filter browser test</h1>
 
     <h3>Browser detail</h3>
+    <p id="pUserAgent"></p>
     <p id="pIos"></p>
     <p id="pMobile"></p>
 
     <script>
       window.onload = function () {
-        document.getElementById("pIos").innerHTML = tc_vars.length;
-        //document.getElementById("pIos").innerHTML = "Ios = "+ isIos;
-        document.getElementById("pMobile").innerHTML = "Mobile = " + isMobile;
+        document.getElementById("pUserAgent").innerHTML =
+          "UserAgent : </br> <b>" + userAgent + "<b>";
+        document.getElementById("pIos").innerHTML = "Ios = <b>" + isIos + "<b>";
+        document.getElementById("pMobile").innerHTML =
+          "IsMobile = <b>" + isMobile + "<b>";
       };
     </script>
 
