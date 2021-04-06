@@ -12,6 +12,7 @@
     <p id="pMobile"></p>
     <p id="pIos"></p>
     <p id="pAndroid"></p>
+    <p id="pwebView"></p>
     <p id="pTrack"></p>
 
     <script>
@@ -24,6 +25,9 @@
         document.getElementById("pIos").innerHTML = "Ios = <b>" + isIos + "<b>";
         document.getElementById("pAndroid").innerHTML =
           "Android = <b>" + isAndroid + "<b>";
+
+        document.getElementById("pwebView").innerHTML =
+          "IsWebview = <b>" + isWebview + "<b>";
         document.getElementById("pTrack").innerHTML =
           "Should track = <b>" + shouldTrack + "<b>";
       };
