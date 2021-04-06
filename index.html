@@ -9,16 +9,23 @@
 
     <h3>Browser detail</h3>
     <p id="pUserAgent"></p>
-    <p id="pIos"></p>
     <p id="pMobile"></p>
+    <p id="pIos"></p>
+    <p id="pAndroid"></p>
+    <p id="pTrack"></p>
 
     <script>
       window.onload = function () {
         document.getElementById("pUserAgent").innerHTML =
           "UserAgent : </br> <b>" + userAgent + "<b>";
-        document.getElementById("pIos").innerHTML = "Ios = <b>" + isIos + "<b>";
+
         document.getElementById("pMobile").innerHTML =
           "IsMobile = <b>" + isMobile + "<b>";
+        document.getElementById("pIos").innerHTML = "Ios = <b>" + isIos + "<b>";
+        document.getElementById("pAndroid").innerHTML =
+          "Android = <b>" + isAndroid + "<b>";
+        document.getElementById("pTrack").innerHTML =
+          "Should track = <b>" + shouldTrack + "<b>";
       };
     </script>
 
