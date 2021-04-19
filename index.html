@@ -17,6 +17,9 @@
 
     <script>
       window.onload = function () {
+        document.getElementById("pwebView").innerHTML =
+          "IsWebview = <b>" + tC.internalvars.userAgentIsWebview() + "<b>";
+        /*
         document.getElementById("pUserAgent").innerHTML =
           "UserAgent : </br> <b>" + userAgent + "<b>";
 
@@ -30,6 +33,7 @@
           "IsWebview = <b>" + isWebview + "<b>";
         document.getElementById("pTrack").innerHTML =
           "Should track = <b>" + shouldTrack + "<b>";
+            */
       };
     </script>
 
